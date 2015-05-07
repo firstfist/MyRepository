@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.firstsecond.tax_income91.Select_reduce">
+
+    <TextView
+        android:id="@+id/textview_reduce_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="เลือกเงินได้ที่ได้รับการลดหย่อน"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView_select_reduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prev_select_reduce"
+        android:layout_below="@id/textview_reduce_income">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="บุตร" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="อุปการะเลียงดูบิดามารดา(อายุ60ปีขึ้นไป)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="เบี้ยประกันสุขภาพบิดามารดา" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="เบี้ยประกันชีวิต เบี้ยประกันชีวิตแบบบำนาญ" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="เงินสมทบกองทุนประกันสังคม" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="ค่าซื้อหน่วยกองทุนรวมเพื่อการเลี้ยงชีพ(RMF)" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="ค่าซื้อหน่วยกองทุนรวมหุ้นระยะยาว(LTF)"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="ดอกเบี้ยกูยืมเช่าซื้อหรือสร้างที่อยู่อาศัย" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="งินสนับสนุนการศึกษา" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="เงินบริจาค" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:text="ค่าเดินทางท่องเที่ยวภายในประเทศ" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="ผู้พิการหรือทุพพลภาพ" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/prev_select_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/next_select_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next" />
+
+</RelativeLayout>

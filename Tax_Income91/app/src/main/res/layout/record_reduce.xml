@@ -1,0 +1,470 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.firstsecond.tax_income91.Record_reduce">
+
+    <TextView
+        android:id="@+id/textview_record_reduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="บันทึกค่าลดหย่อน"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView_select_reduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prev_record_reduce"
+        android:layout_below="@id/textview_record_reduce">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_record_reduce1"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="หักค่าใช้จ่าย" />
+
+            <TextView
+                android:id="@+id/expense"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_record_reduce2"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce1"
+                android:padding="10dp"
+                android:text="ลดหย่อน" />
+
+            <TextView
+                android:id="@+id/reducetion"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/textview_record_reduce1"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_record_reduce3"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce2"
+                android:padding="10dp"
+                android:text="ลดหย่อนคู่สมรส" />
+
+            <TextView
+                android:id="@+id/reduction_mate"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/textview_record_reduce2"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_record_reduce4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce3"
+                android:padding="10dp"
+                android:text="บุตร(ไม่ได้ศึกษาหรือศึกษาต่างประเทศ)" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_reduce1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_record_reduce4"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_childnon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_record_reduce4"
+                    android:padding="10dp"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_childnon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_record_reduce4"
+                    android:layout_toRightOf="@id/radiobutton_childnon1"
+                    android:padding="10dp"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_childnon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_record_reduce4"
+                    android:layout_toRightOf="@id/radiobutton_childnon2"
+                    android:padding="10dp"
+                    android:text="3" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textview_childnon"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/textview_record_reduce4"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiogroup_reduce1"
+                android:padding="10dp"
+                android:text="บุตร(ศึกษาในประเทศ)" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_reduce2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_record_reduce5"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_child1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_record_reduce5"
+                    android:padding="10dp"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_child2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_record_reduce5"
+                    android:layout_toRightOf="@+id/radiobutton_child1"
+                    android:padding="10dp"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_child3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_record_reduce5"
+                    android:layout_toRightOf="@+id/radiobutton_child2"
+                    android:padding="10dp"
+                    android:text="3" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textview_child"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:layout_below="@id/textview_record_reduce5"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce_dad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radiogroup_reduce2"
+                android:padding="10dp"
+                android:text="อุปการะบิดา" />
+
+            <TextView
+                android:id="@+id/textview_reduce_dad"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/radiogroup_reduce2"
+                android:padding="10dp"
+                android:text=""/>
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce_mom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_reduce_dad"
+                android:padding="10dp"
+                android:text="อุปการะมารดา" />
+
+            <TextView
+                android:id="@+id/textview_reduce_mom"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checkbox_reduce_dad"
+                android:padding="10dp"
+                android:text=""/>
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce_dad_mate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_reduce_mom"
+                android:padding="10dp"
+                android:text="อุปการะบิดาคู่สมรส" />
+
+            <TextView
+                android:id="@+id/textview_reduce_dad_mate"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checkbox_reduce_mom"
+                android:padding="10dp"
+                android:text=""/>
+
+            <CheckBox
+                android:id="@+id/checkbox_reduce_mom_mate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_reduce_dad_mate"
+                android:padding="10dp"
+                android:text="อุปการะมารดาคู่สมรส" />
+
+            <TextView
+                android:id="@+id/textview_reduce_mom_mate"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checkbox_reduce_dad_mate"
+                android:padding="10dp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textview_record_reduce6"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_reduce_mom_mate"
+                android:padding="10dp"
+                android:text="เบี้ยประกันสุขภาพบิดามารดา" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce1"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checkbox_reduce_mom_mate" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce7"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce6"
+                android:padding="10dp"
+                android:text="เบี้ยประกันสุขภาพบิดามารดาคู่สมรส" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce2"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textview_record_reduce6"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textview_record_reduce8"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce7"
+                android:padding="10dp"
+                android:text="เบี้ยประกันชีวิต" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce3"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:layout_below="@id/textview_record_reduce7" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce9"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce8"
+                android:padding="10dp"
+                android:text="เบี้ยประกันชีวิตแบบบำนาญ" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce4"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textview_record_reduce8" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce10"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce9"
+                android:padding="10dp"
+                android:text="ค่าซื้อกองทุนรวมหุ้นระยะยาว(LTF)" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce5"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textview_record_reduce9" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce11"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_record_reduce10"
+                android:padding="10dp"
+                android:text="ค่าซื้อกองทุนรวมเพื่อนการเลี้ยงชีพ
+                (RMF)" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce6"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textview_record_reduce10" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce12"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_record_reduce11"
+                android:padding="10dp"
+                android:text="ดอกเบี้ยเงินกู้ที่อยู่อาศัย" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce7"
+                android:inputType="number"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/textview_record_reduce11" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce13"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_record_reduce12"
+                android:padding="10dp"
+                android:text="เงินสมทบประกันสังคม" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce8"
+                android:inputType="number"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textview_record_reduce12" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce14"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce13"
+                android:padding="10dp"
+                android:text="ค่าเดินทางท่องเที่ยวภายในประเทศ" />
+
+            <EditText
+                android:id="@+id/edittext_record_reduce9"
+                android:inputType="number"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/textview_record_reduce13" />
+
+            <TextView
+                android:id="@+id/textview_record_reduce15"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_record_reduce14"
+                android:padding="10dp"
+                android:text="ผู้พิการหรือทุพพลภาพ" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_reduce3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_record_reduce15"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_disabled1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_disabled2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_disabled3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_disabled4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_disabled5"
+                    android:text="5"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiobutton_disabled6"
+                    android:text="6"/>
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_disabled"
+                android:text=""
+                android:layout_below="@id/textview_record_reduce15"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/prev_record_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/next_record_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next" />
+
+
+</RelativeLayout>

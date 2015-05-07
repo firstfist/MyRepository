@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.firstsecond.tax_income91.Donate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เงินบริจาค"
+        android:id="@+id/textview_donate"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="เงินสนับสนุนการศึกษา"
+        android:id="@+id/textview_donate1"
+        android:padding="15dp"
+        android:layout_below="@id/textview_donate"
+        />
+    <EditText
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/edittext_donate1"
+        android:layout_below="@id/textview_donate"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_donate2"
+        android:text="เงินบริจาค"
+        android:layout_below="@id/textview_donate1"
+        android:padding="15dp"
+        />
+    <EditText
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/edittext_donate2"
+        android:layout_below="@+id/textview_donate1"
+        android:layout_alignParentRight="true"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prev"
+        android:id="@+id/prev_donate"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next_donate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
